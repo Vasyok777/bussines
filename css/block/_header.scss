@@ -1,0 +1,32 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	padding: 16.5rem 0 15.5rem;
+	background: rgba(16, 16, 16, 0.65);
+	backdrop-filter: blur(12rem);
+	@media (max-width: 768px) {
+		padding: 21rem 0;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 24rem;
+		align-items: center;
+		color: #fff;
+		font-size: 15rem;
+		font-weight: 500;
+		line-height: 1.25;
+		& span,
+		& .button {
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+	}
+}

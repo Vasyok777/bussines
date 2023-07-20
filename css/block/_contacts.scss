@@ -1,0 +1,173 @@
+.contacts {
+	padding: 60rem 0 120rem;
+	@media (max-width: 768px) {
+		padding: 56px 0;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 68rem;
+		@media (max-width: 1025px) {
+			flex-wrap: wrap;
+			gap: 40rem;
+		}
+	}
+	&__left {
+		@media (max-width: 1025px) {
+			text-align: center;
+		}
+		& .title {
+			margin-bottom: 20rem;
+			@media (max-width: 768px) {
+				margin-bottom: 16rem;
+			}
+		}
+		& p {
+			color: rgba(255, 255, 255, 0.8);
+			font-weight: 400;
+			line-height: 1.59;
+			width: 306rem;
+			margin-bottom: 30rem;
+			@media (max-width: 1025px) {
+				margin: 0 auto 30rem;
+			}
+			@media (max-width: 768px) {
+				margin-bottom: 16rem;
+			}
+		}
+		& a {
+			display: block;
+			color: rgba(255, 255, 255, 0.8);
+			font-size: 20rem;
+			font-weight: 700;
+			line-height: 1.25;
+			@media (max-width: 768px) {
+				font-size: 14rem;
+				line-height: 1;
+				letter-spacing: 0.7rem;
+			}
+			& + a {
+				margin-top: 22rem;
+				margin-bottom: 0;
+				@media (max-width: 768px) {
+					margin-top: 16rem;
+				}
+			}
+		}
+	}
+	&__button {
+		display: inline-flex;
+		padding: 24rem 32rem 21rem;
+		gap: 18rem;
+		border-radius: 54rem;
+		border: 0.75rem solid rgba(255, 255, 255, 0.5);
+		transition: all 0.3s ease;
+		&:hover {
+			background-color: #fff;
+			color: #212121;
+			& svg path {
+				fill: #212121;
+			}
+		}
+		&:active {
+			background-color: #bdbdbd;
+			border: 1px solid #bdbdbd;
+		}
+		@media (max-width: 768px) {
+			padding: 14rem 18rem 14rem 24rem;
+			gap: 9rem;
+			margin-top: 40rem !important;
+		}
+	}
+	&__telegram {
+		display: inline-block;
+		width: 18rem;
+		height: 15rem;
+		@media (max-width: 1440px) {
+			width: 18px;
+			height: 15px;
+		}
+	}
+	&__right {
+		padding: 40rem;
+		border-radius: 12px;
+		background: #212121;
+		@media (max-width: 768px) {
+			padding: 40rem 20rem;
+		}
+		& p {
+			color: rgba(255, 255, 255, 0.8);
+			line-height: 1.59;
+			margin-bottom: 30rem;
+			max-width: 618rem;
+			@media (max-width: 768px) {
+				margin-bottom: 24rem;
+				font-size: 14rem;
+				line-height: 1.25;
+			}
+		}
+	}
+}
+
+.form {
+	&__input {
+		background: transparent;
+		width: 100%;
+		border-radius: 37.77rem;
+		border: 0.75rem solid rgba(255, 255, 255, 0.5);
+		margin-bottom: 20rem;
+		padding: 18rem 30rem;
+		color: #fff;
+		&:focus {
+			color: #fff;
+			border: 0.75rem solid rgba(255, 255, 255, 1);
+		}
+		&:valid {
+			border: 0.75rem solid rgba(255, 255, 255, 1);
+		}
+	}
+	&__button {
+		padding: 20rem 32rem;
+		background-color: var(--accept-color);
+		color: #101010;
+		font-size: 14rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 0.7rem;
+		border-radius: 54rem;
+		flex-shrink: 0;
+		transition: all 0.3s ease;
+		&:hover {
+			background-color: #ffefc6;
+		}
+		&:active {
+			background-color: #ffc64a;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+		& p {
+			width: 100%;
+		}
+	}
+	&__bottom {
+		display: flex;
+		align-items: center;
+		gap: 20rem;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			gap: 16rem;
+		}
+		& p {
+			width: 100%;
+			margin-bottom: 0px;
+			@media (max-width: 768px) {
+				font-size: 12rem;
+				line-height: 1.25;
+			}
+		}
+	}
+}
+.contacts__button {
+	display: inline-flex !important;
+}

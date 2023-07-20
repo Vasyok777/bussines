@@ -1,0 +1,62 @@
+.services {
+	padding-top: 120rem;
+	background: var(--secondary-bg);
+	@media (max-width: 768px) {
+		padding-top: 56rem;
+	}
+	&__top {
+		max-width: 801rem;
+		text-align: center;
+		margin: 0 auto 80rem;
+		@media (max-width: 768px) {
+			margin: 0 auto 40rem;
+		}
+		& h2 {
+			margin-bottom: 18rem;
+		}
+		& p {
+			max-width: 828rem;
+			color: rgba(255, 255, 255, 0.8);
+			font-size: 14rem;
+			line-height: 1.7;
+		}
+	}
+	&__content {
+		display: flex;
+		gap: 10rem;
+		@media (max-width: 1025px) {
+			flex-wrap: wrap;
+		}
+	}
+}
+.card {
+	&__item {
+		padding: 36rem 18rem;
+		border-radius: 12rem;
+		background: rgba(16, 16, 16, 0.7);
+		backdrop-filter: blur(2.25rem);
+		text-align: center;
+		@media (max-width: 1025px) {
+			flex-basis: 48%;
+		}
+		@media (max-width: 768px) {
+			flex-basis: 100%;
+		}
+	}
+	&__icon {
+		margin: 0 auto 8rem;
+		width: 78rem;
+		height: 78rem;
+	}
+	& h4 {
+		font-size: 20rem;
+		font-weight: 700;
+		line-height: 1.25;
+		letter-spacing: 0.4rem;
+		margin-bottom: 15rem;
+	}
+	& p {
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.7;
+	}
+}
